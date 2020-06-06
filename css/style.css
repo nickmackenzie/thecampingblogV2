@@ -1,6 +1,6 @@
 /* Color Variables */
 :root {
-  --dark-green: #05854f;
+  --dark-green: #02844F;
   --light-green: #00af66;
   --black: #000000;
   --white: #ffffff;
@@ -124,7 +124,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-margin-top: -120px;
+margin-top: -110px;
   
 }
 
@@ -206,13 +206,14 @@ margin-top: -120px;
   padding: 50px;
   text-align: center;
   font-size: var(--lrg-font);
-  color: white;
+  color: var(--dark-green-transparent)
 }
 .title h2 {
 
   padding-right: 60px;
   padding: 10px;
 font-size: 3rem;
+
 }
 .box-wrapper {
  display: grid;
@@ -224,4 +225,8 @@ font-size: 3rem;
   padding: 50px;
   text-align: center;
   cursor: pointer;
+}
+
+.middle {
+  background-color: var(--white);
 }
