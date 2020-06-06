@@ -199,3 +199,11 @@ margin-top: -120px;
   
   transition: 200ms ease-in-out;
 }
+
+/* Community Icons/Middle */
+
+.join {
+  padding: 50px;
+  text-align: center;
+  font-size: var(--lrg-font);
+}

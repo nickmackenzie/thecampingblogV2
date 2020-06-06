@@ -7,13 +7,15 @@ display: flex;
 flex-direction: column;
 align-items: center;
 position: absolute;
+justify-content: space-evenly;
 right: 0;
-padding-top: 40px;
+padding-top: 50px;
 text-align: left;
 line-height: 30px;
-height: 30vh;
+height: 50vh;
 background-color: #05854f;
 width: 30%;
+overflow-x: hidden;
 transform: translateX(110%);
 transition: transform 0.5s ease-in;
 
@@ -27,8 +29,9 @@ text-align: start;
   font-size: 0.5rem;
  }
  a {
-  
-  font-size: 1rem;
+   margin-left: auto;
+  padding: 10px;
+  font-size: .9rem;
  }
   .weather-wrapper {
     display: none;
