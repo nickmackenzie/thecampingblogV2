@@ -1,1 +1,0 @@
-let paddle = getElement;

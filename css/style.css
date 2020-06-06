@@ -33,9 +33,10 @@
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--dark-green);
   font-family: var(--main-font);
   height: 100%;
+
 }
 
 /* NavBar */
@@ -48,8 +49,8 @@ nav {
   font-family: var(--main-font);
   justify-content: center;
   align-items: center;
-
-  opacity: 0.9;
+z-index: 999;
+  
 }
 
 .logo {
@@ -168,8 +169,29 @@ img {
 /* Paddle */
 
 .paddle {
+  
   margin-right: 10px;
   cursor: pointer;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  transition: 200ms ease-in-out;
+  filter: invert();
+  
+}
+
+.paddle-icon, .paddle-icon-2 {
+  display: none;
+
+ cursor: pointer;
+ transition: 200ms ease-in-out;
+ user-select: none;
+ 
+}
+
+
+.active {
+  rotate: 45deg;
+  filter: invert();
+  
+  transition: 200ms ease-in-out;
 }
