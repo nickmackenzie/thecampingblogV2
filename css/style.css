@@ -206,4 +206,21 @@ margin-top: -120px;
   padding: 50px;
   text-align: center;
   font-size: var(--lrg-font);
+  color: white;
+}
+.title h2 {
+
+  padding-right: 60px;
+  padding: 10px;
+font-size: 3rem;
+}
+.box-wrapper {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ justify-items: center;
+}
+
+.box {
+  padding: 50px;
+  text-align: center;
 }
