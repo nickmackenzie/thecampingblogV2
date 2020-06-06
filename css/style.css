@@ -223,4 +223,5 @@ font-size: 3rem;
 .box {
   padding: 50px;
   text-align: center;
+  cursor: pointer;
 }
