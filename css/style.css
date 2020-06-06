@@ -9,7 +9,7 @@
   --dark-green-transparent: #05854f;
   --light-green-transparent: #00af66;
   --black-transparent: #000000;
-  --white-transparent: #ffffff;
+  --white-transparent: #ffffffc4;
 
   /* Font Familys */
   --main-font: "Bebas Neue", cursive;
@@ -21,7 +21,8 @@
   --lrg-font: 3rem;
   --med-font: 1.6rem;
   --title: 1.4rem;
-  --small-font: 0.6rem;
+  --small-font: 0.8rem;
+  --hero-text: 5rem;
 }
 
 /* Global Resets */
@@ -34,6 +35,7 @@
 body {
   background-color: var(--white);
   font-family: var(--main-font);
+  height: 100%;
 }
 
 /* NavBar */
@@ -46,7 +48,8 @@ nav {
   font-family: var(--main-font);
   justify-content: center;
   align-items: center;
-  z-index: 1;
+
+  opacity: 0.9;
 }
 
 .logo {
@@ -79,19 +82,20 @@ a {
 .weather-wrapper {
   display: flex;
   align-items: center;
-  color: var(--black);
+  color: var(--white);
   border-radius: 12px;
   width: 250px;
   height: 25px;
   margin: 10px;
-  background-color: var(--white);
+  background-color: rgba(0, 0, 0, 0.418);
   margin: 20px;
+  font-family: var(--secondary-font);
+  font-size: var(--small-font);
 }
 
 img {
   margin: -15px;
   margin-right: auto;
-  margin-top: 8px;
 }
 
 .weather-bar {
@@ -109,13 +113,15 @@ img {
 }
 
 /* Hero */
-
+.hero-section {
+  height: 100vh;
+  width: 100vh;
+}
 .hero {
   height: 100vh;
-  background-image: url(/images/hero.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
+  background-image: url(/images/hero2.png);
+
+  background-size: cover;
 }
 
 .hero-text {
@@ -125,5 +131,45 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: var(--lrg-font);
+  font-size: var(--hero-text);
+}
+
+.green {
+  color: var(--dark-green);
+}
+
+/* Owl Bar */
+
+.social-owl {
+  position: fixed;
+  top: 30%;
+  margin-left: 10px;
+  z-index: 2;
+}
+
+.owl {
+  width: 64px;
+  height: 88px;
+}
+
+/* Tree Divider */
+
+.section-div {
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  overflow: hidden;
+}
+.trees {
+  height: 200px;
+  width: 100vw;
+}
+
+/* Paddle */
+
+.paddle {
+  margin-right: 10px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr;
 }

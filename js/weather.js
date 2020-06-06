@@ -1,7 +1,7 @@
 let weatherIcon = document.getElementById("weather-icon");
 let temperature = document.getElementById("temperature");
 let city = document.getElementById("city");
-let country = document.getElementById("country");
+let countryName = document.getElementById("country");
 let notification = document.getElementById("notification");
 
 const key = "b5decc838911549f995fee61f543d4f0";
@@ -27,15 +27,18 @@ window.addEventListener("load", () => {
           const { country } = data.sys;
           const { name } = data;
           const { icon } = data.weather[0];
-          const iconUrl = "http://openweathermap.org/img/wn/" + icon + ".png";
+          const iconUrl =
+            "http://openweathermap.org/img/wn/" + icon + "@2x" + ".png";
           temperature.textContent = temp + "°";
           city.textContent = name + ",";
-          country.textContent = country;
-          weatherIcon.innerHTML = "<img src={iconUrl}>";
+
+          weatherIcon.innerHTML = `<img src=${iconUrl}>`;
           console.log(temp);
           console.log(name);
           console.log(country);
           console.log(iconUrl);
+          console.log(weatherIcon);
+          countryName.textContent = country;
         });
     });
   }
