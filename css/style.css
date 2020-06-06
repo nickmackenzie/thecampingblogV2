@@ -30,13 +30,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
   background-color: var(--dark-green);
   font-family: var(--main-font);
   height: 100%;
-
+  overflow-x: hidden;
 }
 
 /* NavBar */
@@ -229,4 +230,87 @@ font-size: 3rem;
 
 .middle {
   background-color: var(--white);
+}
+
+.trees {
+  width: 100vw;
+  overflow: hidden;
+  z-index: 100;
+}
+/* Mailing List */
+.mailing-section {
+  height: 600px;
+  background-color: var(--light-green);
+  display: flex;
+  flex-direction:column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.mailing-list-title {
+
+  text-align: center;
+  font-size: 4rem;
+}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  right: 0;
+  left: 0;
+  width: 50%;
+  padding: 10px;
+  outline: none;
+  font-family: var(--main-font);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.input-field:focus {
+  border: 2px solid var(--dark-green)
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+
+  opacity: 0.9;
+}
+
+.btn:hover {
+  color: var(--light-green);
+}
+
+.fa-envelope-open {
+  background-color: #02844F;
+  padding: 10px;
+  color: white;
+}
+
+
+/* Footer */
+footer {
+  height: 50px;
 }

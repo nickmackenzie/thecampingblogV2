@@ -41,7 +41,7 @@ text-align: start;
   padding: 2px;
   }
   .hero-text {
-    font-size: 2.6rem;
+   display: none;
   }
   .nav-active {
     transform: translateX(10%);
