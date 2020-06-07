@@ -147,6 +147,9 @@ margin-top: -110px;
 /* Owl Bar */
 
 .social-owl {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
   position: fixed;
   top: 30%;
   margin-left: 10px;
@@ -154,10 +157,71 @@ margin-top: -110px;
 }
 
 .owl {
+  display: flex;
   width: 64px;
   height: 88px;
 }
+.panel {
+  opacity: 0;
+  background-color:#fff;
+  
+ border: none;
+ background-color: transparent;
+  display:inline-block;
+  flex:1 1;
+  height:200px;
+  
+  overflow:hidden;
+ 
+}
+.show {
+  opacity: 1;
+}
+.speech {
+ 
+  background-color:#fff;
+  border:solid 2px #000;
+  border-radius:12px;
+display: flex;
+flex-direction: column;
+  margin:2em;
+  
+  padding:.5em 1em;
+  position:relative;
+}
 
+.speech:before {
+
+  border:solid 12px transparent;
+  border-left:solid 12px #000;
+  border-top:solid 12px #000;
+  bottom:-24px;
+  content:"";
+  height:0;
+  left:24px;
+  position:absolute;
+  transform:skew(-15deg);
+  width:0;
+}
+
+.speech:after {
+ 
+  border:solid 10px transparent;
+  border-left:solid 10px #fff;
+  border-top:solid 10px #fff;
+  bottom:-19px;
+  content:"";
+  height:0;
+  left:27px;
+  position:absolute;
+  transform:skew(-15deg);
+  width:0;
+}
+.social-icons {
+  display: none;
+  display: flex;
+  justify-content: space-evenly;
+}
 /* Tree Divider */
 
 .section-div {
@@ -276,7 +340,7 @@ font-size: 3rem;
 .input-field {
   right: 0;
   left: 0;
-  width: 50%;
+  width: 100%;
   padding: 10px;
   outline: none;
   font-family: var(--main-font);
@@ -312,5 +376,14 @@ font-size: 3rem;
 
 /* Footer */
 footer {
-  height: 50px;
+  text-align: center;
+  color: var(--dark-green);
+  font-size: 1.5rem;
+  background: url(/images/trees.png);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ height: 200px;
+ background-color: var(--light-green);
 }
