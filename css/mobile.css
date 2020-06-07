@@ -50,4 +50,7 @@ text-align: start;
   .box-wrapper {
     grid-template-columns: 1fr;
   }
+  .social-owl {
+    display: none;
+  }
 }
